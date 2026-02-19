@@ -1,0 +1,65 @@
+# Virtual Environment
+venv/
+env/
+
+# Python
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data & Models
+data/raw/*.csv
+data/processed/*.pkl
+models/*.pkl
+models/*.joblib
+
+# FastF1 Cache
+cache/
+
+# Outputs
+outputs/charts/*.png
+outputs/reports/*.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+```
+
+**Save** (Ctrl + S)
+
+---
+
+## STEP 6: Fill in requirements.txt
+
+Click on `requirements.txt` and paste this:
+```
+# Data Collection
+fastf1>=3.0.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilities
+jupyter>=1.0.0
